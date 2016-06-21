@@ -13,6 +13,8 @@
 		7F1C12D31D05CD5800FE4B5A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7F1C12D21D05CD5800FE4B5A /* Assets.xcassets */; };
 		7F1C12D61D05CD5800FE4B5A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7F1C12D41D05CD5800FE4B5A /* LaunchScreen.storyboard */; };
 		7F1C12DE1D05D3B900FE4B5A /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F1C12DD1D05D3B900FE4B5A /* MapViewController.swift */; };
+		7FC5DA361D0721D800BCB4D5 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7FC5DA351D0721D800BCB4D5 /* MapKit.framework */; };
+		7FE90D971D19A1F400BA37B4 /* Annotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FE90D961D19A1F400BA37B4 /* Annotation.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		7F1C12D51D05CD5800FE4B5A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7F1C12D71D05CD5800FE4B5A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7F1C12DD1D05D3B900FE4B5A /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		7FC5DA351D0721D800BCB4D5 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		7FE90D961D19A1F400BA37B4 /* Annotation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Annotation.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +35,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7FC5DA361D0721D800BCB4D5 /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +45,7 @@
 		7F1C12BF1D05CD5800FE4B5A = {
 			isa = PBXGroup;
 			children = (
+				7FC5DA351D0721D800BCB4D5 /* MapKit.framework */,
 				7F1C12CA1D05CD5800FE4B5A /* Coffee Shops */,
 				7F1C12C91D05CD5800FE4B5A /* Products */,
 			);
@@ -63,6 +69,7 @@
 				7F1C12D41D05CD5800FE4B5A /* LaunchScreen.storyboard */,
 				7F1C12D71D05CD5800FE4B5A /* Info.plist */,
 				7F1C12DD1D05D3B900FE4B5A /* MapViewController.swift */,
+				7FE90D961D19A1F400BA37B4 /* Annotation.swift */,
 			);
 			path = "Coffee Shops";
 			sourceTree = "<group>";
@@ -99,6 +106,12 @@
 				TargetAttributes = {
 					7F1C12C71D05CD5800FE4B5A = {
 						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = 244AFE2DG4;
+						SystemCapabilities = {
+							com.apple.Maps.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -140,6 +153,7 @@
 			files = (
 				7F1C12CE1D05CD5800FE4B5A /* ViewController.swift in Sources */,
 				7F1C12DE1D05D3B900FE4B5A /* MapViewController.swift in Sources */,
+				7FE90D971D19A1F400BA37B4 /* Annotation.swift in Sources */,
 				7F1C12CC1D05CD5800FE4B5A /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -255,10 +269,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = "Coffee Shops/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.jiert.coffeshops.Coffee-Shops";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -266,10 +283,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = "Coffee Shops/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.jiert.coffeshops.Coffee-Shops";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
@@ -292,6 +312,7 @@
 				7F1C12DC1D05CD5800FE4B5A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
