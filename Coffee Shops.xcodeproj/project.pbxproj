@@ -12,7 +12,6 @@
 		7F1C12D11D05CD5800FE4B5A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7F1C12CF1D05CD5800FE4B5A /* Main.storyboard */; };
 		7F1C12D31D05CD5800FE4B5A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7F1C12D21D05CD5800FE4B5A /* Assets.xcassets */; };
 		7F1C12D61D05CD5800FE4B5A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7F1C12D41D05CD5800FE4B5A /* LaunchScreen.storyboard */; };
-		7F1C12DE1D05D3B900FE4B5A /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F1C12DD1D05D3B900FE4B5A /* MapViewController.swift */; };
 		7FC5DA361D0721D800BCB4D5 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7FC5DA351D0721D800BCB4D5 /* MapKit.framework */; };
 		7FE90D971D19A1F400BA37B4 /* Annotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FE90D961D19A1F400BA37B4 /* Annotation.swift */; };
 /* End PBXBuildFile section */
@@ -25,7 +24,6 @@
 		7F1C12D21D05CD5800FE4B5A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7F1C12D51D05CD5800FE4B5A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7F1C12D71D05CD5800FE4B5A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		7F1C12DD1D05D3B900FE4B5A /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		7FC5DA351D0721D800BCB4D5 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		7FE90D961D19A1F400BA37B4 /* Annotation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Annotation.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -68,7 +66,6 @@
 				7F1C12D21D05CD5800FE4B5A /* Assets.xcassets */,
 				7F1C12D41D05CD5800FE4B5A /* LaunchScreen.storyboard */,
 				7F1C12D71D05CD5800FE4B5A /* Info.plist */,
-				7F1C12DD1D05D3B900FE4B5A /* MapViewController.swift */,
 				7FE90D961D19A1F400BA37B4 /* Annotation.swift */,
 			);
 			path = "Coffee Shops";
@@ -152,7 +149,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				7F1C12CE1D05CD5800FE4B5A /* ViewController.swift in Sources */,
-				7F1C12DE1D05D3B900FE4B5A /* MapViewController.swift in Sources */,
 				7FE90D971D19A1F400BA37B4 /* Annotation.swift in Sources */,
 				7F1C12CC1D05CD5800FE4B5A /* AppDelegate.swift in Sources */,
 			);
